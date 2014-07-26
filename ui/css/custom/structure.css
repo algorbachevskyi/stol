@@ -1,0 +1,26 @@
+
+.structure {
+    display: inline-block;
+}
+
+.structure .title {
+    font-weight: bold;
+    color: #ffb80f;
+    margin-bottom: 10px;
+}
+
+.structure .text {
+
+}
+
+.structure-map-wrap {
+    display: inline-block;
+    background-image: url(../../images/ui/lines-bg.png);
+}
+
+.structure-map {
+    margin: 5px;
+    width: 790px;
+    height: 400px;
+    /*border: 1px solid #ffb80f;*/
+}

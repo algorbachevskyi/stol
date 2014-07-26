@@ -1,0 +1,141 @@
+/* BUILD page styles*/
+
+.build-wrap {
+    width: 825px;
+    min-height: 600px;
+    position: relative;
+    bottom: 30px;
+}
+
+.building {
+    display: inline-block;
+    width: 57%;
+    height: 630px;
+}
+
+.build-img {
+    position: absolute;
+    top: -60px;
+    left: -170px;
+    z-index: -20;
+}
+
+.build-info {
+    display: inline-block;
+    width: 40%;
+    float: right;
+    height: 630px;
+}
+
+/* floors styles */
+
+.floor {
+    width: 463px;
+    height: 39px;
+    background-color: #ffb807;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.floor.top {
+    margin-top: 186px;
+    height: 58px;
+}
+
+.floor.bottom {
+    height: 64px;
+    opacity: 0;
+}
+
+/* build info styles */
+
+.indicators {
+    margin-top: 180px;
+    background-image: url(../../images/ui/arr_left.png);
+    background-repeat: no-repeat;
+    background-position: 0px 28px;
+    padding-left: 20px;
+}
+.indicator {
+    width: 60px;
+    height: 60px;
+    font-size: 45px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    margin-left: 3px;
+}
+
+.indicator span {
+    display: block;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.indicators.floor1 {
+    margin-top: 433px;
+}
+
+.indicators.floor2 {
+    margin-top: 385px;
+}
+
+.indicators.floor3 {
+    margin-top: 347px;
+}
+
+.indicators.floor4 {
+    margin-top: 308px;
+}
+
+.indicators.floor5 {
+    margin-top: 268px;
+}
+
+.indicators.floor6 {
+    margin-top: 228px;
+}
+
+.indicators.floor7 {
+    margin-top: 180px;
+}
+
+.gray {
+    background-color: #e8e8e8;
+    color: #5b3206;
+}
+
+.brown {
+    background-color: #5b3206;
+    color: #ffb807;
+}
+
+.yellow {
+    background-color: #ffb807;
+    color: #5b3206;
+}
+/* Experemental styles */
+
+#to-left, #zoom, #to-right {
+    width: 20px;
+    height: 22px;
+    background-image: url(../../images/ui/controls.png);
+    display: inline-block;
+    margin: 30px 10px 0px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+#zoom {
+    background-position: -42px;
+}
+
+#to-right {
+    background-position: -22px;
+}
+
+.build-controls {
+    text-align: center;
+    margin-top: 70px;
+}
+

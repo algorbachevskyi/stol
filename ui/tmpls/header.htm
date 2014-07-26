@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Столичний beta | <?php echo $title;?></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="/ui/images/ui/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="ui/css/custom/main.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/custom/build.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/custom/contacts.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/custom/structure.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/custom/flats.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/custom/pluses.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/custom/slider.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/lib/reveal.css" type="text/css" />
+        <link rel="stylesheet" href="ui/css/lib/hover-min.css" type="text/css" />
+
+        <script type="text/javascript" src="ui/js/custom/jquery.js"></script>
+        <script type="text/javascript" src="ui/js/lib/jquery.reveal.js"></script>
+        <script type="text/javascript" src="ui/js/custom/main.js"></script>
+        <script type="text/javascript" src="ui/js/lib/jquery.menuFlip.js"></script>
+        <script type="text/javascript" src="ui/js/lib/rhinoslider-1.05.js"></script>
+        <script type="text/javascript" src="ui/js/lib/easing.js"></script>
+
+
+        <script type="text/javascript"
+                src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBYYUj-JQ1PrOMWFoxTrJINl8uyZX5FO-k&sensor=true">
+        </script>
+
+	</head>
+	<body>
+
+    <!--<div class="main">-->
+    <div class="header-wrap">
+    <div class="header">
+
+            <a href="/" class=" logo"></a>
+
+            <div class="header-address hover-now">
+                <div class="small">ГАРКУШІ</div>
+                <div class="big">27</div>
+            </div>
+
+            <div class="flat-checker">
+                <div class="checker-text">Залишилося</div>
+                <div class="checker-number round pulse">36</div>
+                <div class="flats-text">квартир</div>
+            </div>
+
+            <div class="logo-tks"></div>
+
+            <div class="header-info">
+                Здача в експлуатацію <br/>
+                IV квартал 2014 року
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <div class="menu-content">
+    <ul class="menu" id="flip_nav">
+        <li><a href="/main" class="item <?php echo isset($mainpage) ? 'selected page' : ''; ?>" id="mainpage-item">Будинок</a></li>
+        <li><a href="/pluses" class="item <?php echo isset($pluses) ? 'selected page' : ''; ?>" id="pluses-item">Переваги</a></li>
+        <li><a href="/flats" class="item <?php echo isset($flats) ? 'selected page' : ''; ?>" id="flats-item">Квартири</a></li>
+        <li><a href="/showroom" class="item <?php echo isset($showroom) ? 'selected page' : ''; ?>" id="showroom-item">Шоу-рум</a></li>
+        <li><a href="/structure" class="item <?php echo isset($structure) ? 'selected page' : ''; ?>" id="structure-item">Інфраструктура</a></li>
+        <li><a href="/contacts" class="item <?php echo isset($contacts) ? 'selected page' : ''; ?> last" id="contacts-item">Контакти</a></li>
+    </ul>
+    </div>
+
+
+
+
+
+

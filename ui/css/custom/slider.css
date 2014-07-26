@@ -1,0 +1,106 @@
+.slider {
+    margin-top: -310px;
+}
+
+.slider-content {
+    width: 100%;
+    height: 515px;
+    position: relative;
+    bottom: 33px;
+    overflow: hidden;
+}
+
+.slider-img {
+    width: 100%;
+    min-width: 1200px;
+    height: 500px;
+    background-image: url(../../images/ui/prew1.jpg);
+    background-size: cover;
+}
+
+.slider .pattern {
+    background: url(../../images/ui/pattern2.png);
+    width: 100%;
+    height: 100%;
+}
+
+.slider-content .before, .slider-content .after {
+    position: absolute;
+    top: -3rem;
+    content: " ";
+    z-index: 2;
+    height: 4rem;
+    background: white;
+    background-image: url(../../images/ui/lines-bg.png);
+}
+
+.slider-content .before {
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    left: 0;
+    width: 35%;
+}
+
+.slider-content .after {
+    -webkit-transform: skewY(1deg);
+    -moz-transform: skewY(1deg);
+    -ms-transform: skewY(1deg);
+    -o-transform: skewY(1deg);
+    transform: skewY(1deg);
+    right: 0;
+    width: 66%;
+    top: -43px;
+}
+
+.slider-footer {
+    width: 100%;
+    height: 15px;
+    background-image: url(../../images/ui/lines-bg.png);
+}
+
+/* Text area styles */
+
+.text-area {
+    position: relative;
+    top: 100px;
+    width: 1200px;
+    margin: auto;
+}
+
+.text-area .text {
+    width: 600px;
+    height: 250px;
+    position: absolute;
+    background-image: url(../../images/ui/orange-fon.png);
+}
+
+.slider-area {
+    width: 600px;
+}
+#slider {
+    width:580px;
+    height:190px;
+    right: 300px;
+    top: 90px !important;
+
+    /*IE bugfix*/
+    padding:0;
+    margin:0;
+}
+
+#slider li {
+    list-style:none;
+    color: white;
+    font-size: 28px;
+    background-image: url(../../images/ui/orange-fon.png);
+    text-shadow: 1px 2px 15px rgba(73, 52, 25, 1);
+    padding: 10px;
+}
+
+#page {
+    width:600px;
+    margin:50px auto;
+}

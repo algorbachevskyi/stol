@@ -1,0 +1,52 @@
+<script type="text/javascript" src="ui/js/custom/building.js"></script>
+
+
+<div class="title-line">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+
+<div class="content">
+    <div class="left">
+
+        <!--<div class="address-logo"></div>-->
+        <!--<div class="tks-logo"></div>-->
+
+    </div>
+    <div class="right">
+
+        <div class="build-wrap">
+
+            <div class="building" id="building">
+
+                <div class="floors">
+                    <div id="7th-floor" class="floor top" number="7"></div>
+                    <div id="6th-floor" class="floor" number="6"></div>
+                    <div id="5th-floor" class="floor" number="5"></div>
+                    <div id="4th-floor" class="floor" number="4"></div>
+                    <div id="3th-floor" class="floor" number="3"></div>
+                    <div id="2th-floor" class="floor" number="2"></div>
+                    <!--<div id="1th-floor" class="floor bottom" number="1"></div>-->
+                </div>
+
+                <div class="build-controls">
+                    <div id="to-left"></div>
+                    <div id="zoom"></div>
+                    <div id="to-right"></div>
+                </div>
+
+            </div>
+            <div class="build-info">
+                <div class="indicators">
+                    <div class="indicator brown"><div id="fl-num">7</div><span>поверх</span></div>
+                    <div class="indicator yellow"><div  id="fl-free">5</div><span>вільно</span></div>
+                    <div class="indicator gray"><div id="fl-sold">1</div><span>продано</span></div>
+                </div>
+
+            </div>
+
+            <form id="floor-info" name="floor-info" method="post" action="/flats">
+                <input type="hidden" name="floor-number" id="floor-number" value=""/>
+            </form>
+
+        </div>

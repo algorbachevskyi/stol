@@ -1,0 +1,28 @@
+
+.contact-info {
+    display: inline-block;
+    width: 300px;
+    float: left;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.contact-info .title {
+    font-weight: bold;
+    color: #ff7000;
+    margin-bottom: 10px;
+}
+
+.office-map-wrap {
+    display: inline-block;
+    float: right;
+    margin-top: 50px;
+    background-image: url(../../images/ui/lines-bg.png);
+}
+
+.office-map {
+    margin: 5px;
+    width: 450px;
+    height: 280px;
+    /*border: 1px solid #ffb80f;*/
+}

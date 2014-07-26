@@ -1,0 +1,100 @@
+<script type="text/javascript">
+    globalFloorNumber = "<?php echo $floorNumber;?>";
+</script>
+
+<script type="text/javascript" src="ui/js/custom/flats.js"></script>
+
+<div class="title-line">
+    <div class="before"></div>
+    <div class="after"></div>
+</div>
+
+<div class="content">
+    <div class="left">
+
+        <!--<div class="address-logo"></div>-->
+        <!--<div class="tks-logo"></div>-->
+
+    </div>
+    <div class="right">
+
+        <div class="flats-page">
+
+            <div class="left-part">
+
+                <div class="floor-controls">
+                    <div class="floor-number" id="fl2" number="2">2</div>
+                    <div class="floor-number" id="fl3" number="3">3</div>
+                    <div class="floor-number" id="fl4" number="4">4</div>
+                    <div class="floor-number" id="fl5" number="5">5</div>
+                    <div class="floor-number" id="fl6" number="6">6</div>
+                    <div class="floor-number" id="fl7" number="7">7</div>
+                    <div class="floor-number" id="fl8" number="8">8</div>
+                    <div class="floor-number-text">поверх</div>
+                </div>
+
+                <img src="/ui/images/ui/poverh.png" class="general-floor"/>
+                <div id="general-floor-over-selected"></div>
+                <div id="general-floor-over"></div>
+                <img src="/ui/images/ui/empty-pattern.png" class="general-floor empty" usemap="#general-floor-map"/>
+                <map name="general-floor-map">
+                    <area shape="poly" id="kv1" coords="43,24,118,24,119,50,125,49,125,24,179,25,179,20,171,19,170,18,226,10,233,66,211,68,213,80,216,81,218,98,215,98,217,114,124,114,125,71,118,71,119,109,97,108,97,78,102,78,102,71,42,70,42,59,40,58,39,39,43,39"/>
+                    <area shape="poly" id="kv2" coords="125,118,206,119,207,128,212,128,213,154,206,153,206,164,226,166,227,222,206,220,206,232,209,231,209,245,206,245,206,256,125,256"/>
+                    <area shape="poly" id="kv3" coords="125,264,206,263,207,274,208,275,209,287,206,287,206,296,226,298,228,354,206,352,206,368,213,368,212,386,206,385,206,396,125,397"/>
+                    <area shape="poly" id="kv4" coords="42,373,98,372,97,338,120,338,118,410,126,410,126,403,205,402,205,428,210,429,210,403,226,406,217,478,182,473,186,465,126,465,124,449,119,450,118,465,43,464,43,451,39,450,40,430,42,430,43,408,39,407,39,387,42,387"/>
+                    <area shape="poly" id="kv5" coords="33,263,95,262,95,366,34,366,34,359,11,342,11,310,34,309,34,296,30,295,30,276,34,275"/>
+                    <area shape="poly" id="kv6" coords="33,78,95,78,94,190,33,191,34,174,30,174,30,154,34,154,33,141,11,140,10,109,33,91"/>
+                </map>
+
+            </div>
+
+            <div class="right-part">
+                <div class="pattern1">
+                    <div class="flat-title">
+                        <div class="left"> 2 кімнатна квартира</div>
+                        <!--<div class="right"> Рекомендовані: 2х2 3х3</div>-->
+                    </div>
+                    <div class="flat-wrapper">
+                        <div class="flat-inner">
+                            <div class="flat">
+                                <div class="flat-image"></div>
+                            </div>
+                            <div class="flat-info">
+                                <div class="controls">
+                                    <a href id="flat-zoom" data-reveal-id="zoom-plan">Збільшити</a>
+                                    <div id="plan">Завантажити план</div>
+                                    <div id="see">Назначити показ</div>
+                                    <div id="mebli">Розташувати меблі</div>
+                                </div>
+                                <!--<div class="info-text">-->
+                                <!--<div>Загальна площа: </div><div id="plosha"></div>-->
+                                <!--<div>Житлова площа: </div><div id="zh_plosha"></div>-->
+                                <!--<div>Площа балконів: </div><div id="balkon"></div>-->
+                                <!--<div>Висота приміщень: </div><div id="vysota"></div>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-left"></div>
+                </div>
+
+                <div class="pattern2" style="display:none;">
+                    <div class="flat-title">Текст Текст Текст</div>
+                    <div class="flat-wrapper">
+                        <div class="flat-inner">
+                            <div class="flat">
+                                <div class="flat-image"></div>
+                            </div>
+                            <div class="flat-info">
+                                <a href id="flat-zoom" data-reveal-id="zoom-plan">Збільшити</a>
+                                <div id="plan">Завантажити план</div>
+                                <div id="see">Назначити показ</div>
+                                <div id="mebli">Розташувати меблі</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-left"></div>
+                </div>
+            </div>
+
+        </div>

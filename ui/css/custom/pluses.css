@@ -1,0 +1,64 @@
+.pluses-page .pluses-text {
+    padding: 20px 0px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.pluses-page .pluses-text p {
+    text-indent: 20px;
+}
+
+.pluses-page {
+    padding-bottom: 30px;
+}
+
+.pluses-table {
+    width: 100%;
+}
+
+.pluses-table tr {
+    text-align: center;
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+}
+
+.pluses-table tr:hover {
+    background-color: #f8f4da;
+}
+
+.pluses-table td {
+
+}
+
+.pluses-table tr.header {
+    font-weight: bold;
+    background-color: #ff7000;
+}
+
+.pluses-table tr.header:hover {
+    background-color: #ff9a1b;
+}
+
+.pluses-table tr.sub-header {
+    font-weight: bold;
+    text-align: left;
+    background-color: #f7f7a2;
+}
+
+.pluses-table tr.sub-header:hover {
+    background-color: #f7f7a2;
+}
+
+/*.pluses-table tr.sub-header td {*/
+    /*text-align: center;*/
+/*}*/
+
+.pluses-table tr.total-header {
+    font-weight: bold;
+    background-color: #f7f7a2;
+}
+
+.pluses-table tr.total-header:hover {
+    background-color: #f7f7a2;
+}
