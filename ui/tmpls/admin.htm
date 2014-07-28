@@ -5,21 +5,21 @@
     <title>Столичний | Адміністратор </title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="/ui/images/ui/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-    <link rel="stylesheet" href="ui/css/admin.css" type="text/css" />
+    <link rel="stylesheet" href="ui/css/custom/admin.css" type="text/css" />
     <script type="text/javascript" src="ui/js/custom/jquery.js"></script>
     <script type="text/javascript" src="ui/js/custom/admin.js"></script>
 </head>
 <body>
 
-    <div class="login-form">
+    <form name="login-form" class="login-form" id="login-form" method="post" action="/admin">
         <div class="title">Вхід адміністратора</div>
         <div class="login-fields">
-            <input type="text" id="login" placeholder="Логін"/>
-            <input type="password" id="pass" placeholder="Пароль"/>
+            <input type="text" id="login" name="login" placeholder="Логін"/>
+            <input type="password" id="pass" name="pass" placeholder="Пароль"/>
         </div>
-        <div class="button">Вхід</div>
+        <div class="button" onclick="$('#login-form').submit();">Вхід</div>
         <a href="/" class="text">Повернутися на сайт</a>
-    </div>
+    </form>
 
 
 </body>

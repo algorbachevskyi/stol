@@ -19,6 +19,7 @@ $f3->route('GET /admin','admin->index');
 $f3->route('GET /login','admin->login');
 
 $f3->route('POST /flats','main->flats');
+$f3->route('POST /admin','admin->index');
 
 // Українська версія для справжніх козаків!
 
