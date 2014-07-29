@@ -23,7 +23,7 @@
     width: 240px;
     height: 490px;
     position: absolute;
-    top: 334px;
+    top: 294px;
     background-repeat: no-repeat;
     cursor: pointer;
     margin-top: 20px;
@@ -33,7 +33,7 @@
     width: 240px;
     height: 490px;
     position: absolute;
-    top: 334px;
+    top: 294px;
     background-repeat: no-repeat;
     cursor: pointer;
     margin-top: 20px;
@@ -43,7 +43,7 @@
     width: 240px;
     height: 490px;
     position: absolute;
-    top: 334px;
+    top: 294px;
     display: inherit;
     margin-top: 20px;
 }
@@ -60,9 +60,9 @@
     cursor: pointer;
     width: 15px;
     height: 15px;
-    background-color: #ffb80f;
+    background-color: #dedede;
     padding: 5px;
-    color: #5b3206;
+    color: #0a2313;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -73,18 +73,19 @@
     -moz-transition: background-color 120ms linear;
     -o-transition: background-color 120ms linear;
     transition: background-color 120ms linear;
-    background-color: #5b3206;
-    color: #ffb80f;
+    background-color: #e35707;
+    color: #dedede;
 }
 
 .floor-number.selected {
-    background-color: #5b3206;
-    color: #ffb80f;
+    background-color: #e35707;
+    color: #dedede;
 }
 
 .floor-number-text {
     text-align: left;
     font-size: 13px;
+    color: #e35707;
 }
 
 .floor-number-text.floor2 {
@@ -126,7 +127,11 @@
 .flats-page .flat-title {
     height: 40px;
     width: 100%;
-    padding-top: 10px;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #747372;
 }
 
 .flats-page .flat-title .left {
@@ -145,10 +150,11 @@
 .flats-page .flat-wrapper {
     background-image: url(../../images/ui/lines-bg.png);
     padding: 10px;
+    margin-top: 15px;
 }
 
 .flats-page .flat-inner {
-    border: 1px dotted #ffb80f;
+    /*border: 1px dotted #ffb80f;*/
     background-color: #fff;
 }
 
@@ -159,26 +165,25 @@
 
 .flat-info div {
     cursor: pointer;
-    text-decoration: underline;
     display: block;
+    text-align: center;
 }
 
 .flat-info a {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
     color: #5b3206;
     display: block;
 }
 
 .flat-info .controls {
     display: inline-block;
-    width: 220px;
 }
 /* Pattern 1 styles */
 
 .flats-page .pattern1 .flat {
     width: 490px;
-    height: 340px;
+    height: 375px;
     background-color: #fff;
 }
 
@@ -191,46 +196,60 @@
 }
 
 .flats-page .pattern1 .flat-info {
-    width: 430px;
+    width: 100%;
     height: 80px;
     display: inline-block;
     background-color: #fff;
     font-size: 12px;
+    text-align: center;
+    position: relative;
+    bottom: 25px;
 }
 
-.flats-page .pattern1 #flat-zoom {
-    padding: 5px 10px 5px 25px;
-    background-image: url(../../images/ui/flat-zoom.png);
-    background-repeat: no-repeat;
-    background-position: 2px 3px;
+.controls .control-elem {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 5px;
+
+    -webkit-transition: color 120ms linear;
+    -moz-transition: color 120ms linear;
+    -o-transition: color 120ms linear;
+    transition: color 120ms linear;
+    color: #727170;
+}
+.controls .control-elem:hover {
+    -webkit-transition: color 120ms linear;
+    -moz-transition: color 120ms linear;
+    -o-transition: color 120ms linear;
+    transition: color 120ms linear;
+    color: #e35707;
 }
 
-.flats-page .pattern1 #plan {
-    padding: 5px 10px 5px 25px;
-    background-image: url(../../images/ui/plan.png);
-    background-repeat: no-repeat;
-    background-position: 2px 3px;
+.control-elem p {
+    margin-top: 7px;
 }
 
-.flats-page .pattern1 #see {
-    padding: 5px 10px 5px 25px;
-    background-image: url(../../images/ui/see.png);
-    background-repeat: no-repeat;
-    background-position: 3px 2px;
+.controls #flat-zoom {
+
 }
 
-.flats-page .pattern1 #mebli {
-    padding: 5px 10px 5px 25px;
-    background-image: url(../../images/ui/mebli.png);
-    background-repeat: no-repeat;
-    background-position: 2px 2px;
+.controls #plan {
+}
+
+.controls #see {
+}
+
+.controls #mebli {
 }
 
 /* Pattern 2 styles */
 
 .flats-page .pattern2 .flat {
     width: 345px;
-    height: 490px;
+    height: 450px;
     background-color: #fff;
     display: inline-block;
 }
@@ -248,41 +267,10 @@
     display: inline-block;
     background-color: #fff;
     float: right;
-    padding: 35px 10px;
+    padding: 12px 10px 0 10px;
     font-size: 12px;
 }
 
-.flats-page .pattern2 #flat-zoom {
-    padding: 15px 0px 15px 25px;
-    display: inline-block;
-    background-image: url(../../images/ui/flat-zoom.png);
-    background-repeat: no-repeat;
-    background-position: 0px 13px;
-}
-
-.flats-page .pattern2 #plan {
-    padding: 15px 0px 15px 25px;
-    display: inline-block;
-    background-image: url(../../images/ui/plan.png);
-    background-repeat: no-repeat;
-    background-position: 0px 21px;
-}
-
-.flats-page .pattern2 #see {
-    padding: 15px 0px 15px 25px;
-    display: inline-block;
-    background-image: url(../../images/ui/see.png);
-    background-repeat: no-repeat;
-    background-position: 0px 20px;
-}
-
-.flats-page .pattern2 #mebli {
-    padding: 15px 0px 15px 25px;
-    display: inline-block;
-    background-image: url(../../images/ui/mebli.png);
-    background-repeat: no-repeat;
-    background-position: 0px 20px;
-}
 /* Hover styles */
 
 .kv1-hover {
@@ -377,13 +365,13 @@
 }
 
 #kv2.flat-image {
-    background-position: 4px 13px;
-    background-size: 360px;
+    background-position: 20px 20px;
+    background-size: 315px;
 }
 
 #kv3.flat-image {
-    background-position: 7px 33px;
-    background-size: 345px;
+    background-position: 19px 38px;
+    background-size: 300px;
 }
 
 #kv4.flat-image {
@@ -391,44 +379,46 @@
 }
 
 #kv5.flat-image {
-    background-position: 10px 40px;
-    background-size: 310px;
+    background-position: 40px 40px;
+    background-size: 280px;
 }
 
 #kv6.flat-image {
-    background-position: 10px 15px;
-    background-size: 315px;
+    background-position: 40px 22px;
+    background-size: 280px;
 }
 
 #kv1.zoom-plan-image {
-    background-position: 25px 10px;
+    background-position: 100px 40px;
+    background-size: 600px;
 }
 
 #kv2.zoom-plan-image {
-    background-position: 10px -15px;
+    background-position: 15px 10px;
     height: 535px;
-    background-size: 430px;
+    width: 380px;
+    background-size: 360px;;
 }
 
 #kv3.zoom-plan-image {
-    background-position: 10px 10px;
+    background-position: 35px 40px;
     height: 535px;
-    background-size: 415px;
+    background-size: 350px;
 }
 
 #kv4.zoom-plan-image {
-    background-position: 10px 30px;
-    background-size: 635px;
+    background-position: 180px 30px;
+    background-size: 500px;
 }
 
 #kv5.zoom-plan-image {
-    background-position: 10px 20px;
-    background-size: 380px;
+    background-position: 50px 30px;
+    background-size: 350px;
 }
 
 #kv6.zoom-plan-image {
-    background-position: 10px 0px;
-    background-size: 367px;
+    background-position: 30px 20px;
+    background-size: 326px;
 }
 
 /* Сміття */
@@ -436,7 +426,7 @@
 .arrow-left {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
-    border-right: 15px solid #ffb80f;
+    border-right: 15px solid #727170;
     width: 10px;
     display: inline-block;
     position: relative;
@@ -452,10 +442,86 @@
 
 .zoom-plan-image {
     width: 800px;
-    height: 600px;
+    height: 430px;
     background-repeat: no-repeat;
 }
 
 .info-text {
     display: none;
+}
+
+
+/* fixing styles */
+
+.flats-content {
+    width: 1200px;
+    margin-top: -70px;
+    margin-bottom: 100px;
+    padding-top: 30px;
+
+    background-image: url(../../images/ui/line-gray-orange.png);
+    background-repeat: no-repeat;
+    background-size: 240px;
+    background-position: 100px -5px;
+}
+
+.flats-content .right {
+    width:  72%;
+}
+
+.flats-content .left {
+    width: 28%;
+}
+
+.flatsText {
+    width: 330px;
+    text-align: right;
+    font-size: 38px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 210px;
+    text-transform: uppercase;
+    color: #747372;
+}
+
+.zoom-title {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.zoom-plan.kv1 .zoom-plan-image, .zoom-plan.kv4 .zoom-plan-image {
+    float: none;
+    width: 800px;
+    height: 400px;
+}
+
+.zoom-plan.kv1 .controls, .zoom-plan.kv4 .controls {
+    float: none;
+    width: 100%;
+}
+
+.zoom-plan.kv2, .zoom-plan.kv3, .zoom-plan.kv5, .zoom-plan.kv6 {
+    width: 630px !important;
+    height: 530px !important;
+    margin-left: -360px !important;
+}
+
+
+.zoom-plan.kv2 .zoom-plan-image, .zoom-plan.kv3 .zoom-plan-image, .zoom-plan.kv5 .zoom-plan-image, .zoom-plan.kv6 .zoom-plan-image {
+    width: 400px;
+    height: 500px;
+    float: left;
+}
+
+.zoom-plan.kv2 .controls, .zoom-plan.kv3 .controls, .zoom-plan.kv5 .controls, .zoom-plan.kv6 .controls {
+    display: inline-block;
+    width: 200px;
+    margin-top: 85px;
+    margin-right: 20px;
+}
+
+.zoom-plan .controls a {
+    text-decoration: none;
 }

@@ -10,8 +10,14 @@ $(function(){
         pattern1 = $('.pattern1'),
         pattern2 = $('.pattern2'),
         flatImage = $('.flat-image'),
-        mebli = $('#mebli'),
-        zoomPlanImage = $('.zoom-plan-image');
+        mebli1 = $('#mebli1'),
+        mebli2 = $('#mebli2'),
+        flatTitle = $('.flat-title');
+
+    // zoom variables
+    var zoomPlan = $('.zoom-plan'),
+        zoomPlanImage = $('.zoom-plan-image'),
+        zoomTitle = $('.zoom-title');
 
     var floorNumber = $('.floor-number');
 
@@ -57,6 +63,32 @@ $(function(){
             floorOver.removeClass(flat + '-hover');
             floorOverSelected.addClass(flat + '-hover-selected');
 
+    // set title
+
+            switch (flat) {
+                case 'kv1':
+                case 'kv2':
+                case 'kv3':
+                case 'kv4':
+                    flatTitle.html('2 кімнатна квартира');
+                    zoomTitle.html('2 кімнатна квартира');
+                    break;
+                case 'kv5':
+                case 'kv6':
+                    flatTitle.html('1 кімнатна квартира');
+                    zoomTitle.html('1 кімнатна квартира');
+                    break;
+
+            }
+    // set link to flat doc
+            $('#plan1').attr('href','ui/docs/'+flat+'.pdf');
+            $('#plan2').attr('href','ui/docs/'+flat+'.pdf');
+
+    // set details for zoom-panel-controls
+            zoomPlan.attr('class','reveal-modal xlarge zoom-plan ' + flat);
+            $('#zoom-doc').attr('href','ui/docs/'+flat+'.pdf');
+
+
 //        $.ajax({
 //            type: 'post',
 //            url: '/main/firstAjax',
@@ -89,22 +121,41 @@ $(function(){
         var command = this.id
 
         switch(command) {
-            case 'mebli':
+            case 'mebli1':
+            case 'mebli2':
 
                 if (flatImage.hasClass('mebli')) {
                     flatImage.removeClass('mebli');
                     flatImage.css('background-image', 'url(ui/images/ui/flats/' + currentFlat + '.jpg)');
                     zoomPlanImage.css('background-image', 'url(ui/images/ui/flats/' + currentFlat + '.jpg)');
-                    mebli.html('Розташувати меблі');
+                    mebli1.find('p').html('Розташувати меблі');
+                    mebli2.find('p').html('Розташувати меблі');
                 } else {
                     flatImage.addClass('mebli');
                     flatImage.css('background-image', 'url(ui/images/ui/flats/' + currentFlat + '_m.jpg)');
                     zoomPlanImage.css('background-image', 'url(ui/images/ui/flats/' + currentFlat + '_m.jpg)');
-                    mebli.html('Забрати меблі');
+                    mebli1.find('p').html('Забрати меблі');
+                    mebli2.find('p').html('Забрати меблі');
                 }
 
 
                 break;
+        }
+
+    });
+
+    $('#mebli').on('click',function(){
+
+        if (zoomPlanImage.hasClass('mebli')) {
+            zoomPlanImage.removeClass('mebli');
+            zoomPlanImage.css('background-image', 'url(ui/images/ui/flats/' + currentFlat + '.jpg)');
+            flatImage.css('background-image', 'url(ui/images/ui/flats/' + currentFlat + '.jpg)');
+            $('#mebli').find('p').html('Розташувати меблі');
+        } else {
+            zoomPlanImage.addClass('mebli');
+            zoomPlanImage.css('background-image', 'url(ui/images/ui/flats/' + currentFlat + '_m.jpg)');
+            flatImage.css('background-image', 'url(ui/images/ui/flats/' + currentFlat + '_m.jpg)');
+            $('#mebli').find('p').html('Забрати меблі');
         }
 
     });

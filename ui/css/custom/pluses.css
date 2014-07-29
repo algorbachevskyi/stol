@@ -62,3 +62,10 @@
 .pluses-table tr.total-header:hover {
     background-color: #f7f7a2;
 }
+
+/* fixing styles */
+
+.pluses-content {
+    margin-bottom: 100px;
+    margin-top: -40px;
+}

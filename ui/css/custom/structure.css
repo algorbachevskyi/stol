@@ -16,11 +16,37 @@
 .structure-map-wrap {
     display: inline-block;
     background-image: url(../../images/ui/lines-bg.png);
+    width: 100%;
+    height: 100%;
 }
 
 .structure-map {
     margin: 5px;
-    width: 790px;
-    height: 400px;
+    width: 100%;
+    height: 100%
     /*border: 1px solid #ffb80f;*/
+}
+
+/* fixing styles */
+
+.structure-content {
+    width: 100%;
+    margin-top: -65px;
+}
+
+.map-content {
+    width: 100%;
+    height: 680px;
+}
+
+.map-text {
+    position: relative;
+    top: 90px;
+    z-index: 1;
+    width: 1000px;
+    margin: auto;
+    font-size: 30px;
+    margin-top: -40px;
+    text-transform: uppercase;
+    color: #ff7000;
 }

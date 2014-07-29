@@ -352,10 +352,21 @@ ul#flip_nav a.flipped_item {
     transform: skewY(1deg);
     right: 0;
     width: 66%;
-    top: -42px;
+    top: -48px;
 }
 
 /* Content styles */
+
+.footer-lines {
+    width: 1200px;
+    height: 90px;
+    background-image: url(../../images/ui/line-orange-gray-bottom.png);
+    background-repeat: no-repeat;
+    background-position: right -10px;
+    margin: auto;
+    position: relative;
+    bottom: 140px;
+}
 
 .footer {
     height: 170px;
@@ -363,8 +374,9 @@ ul#flip_nav a.flipped_item {
     letter-spacing: 0px;
     font-size: 13px;
     position: relative;
-    margin-top: 30px;
-    background-image: url(../../images/ui/pattern2.png)
+    /*margin-top: 30px;*/
+    background-image: url(../../images/ui/pattern2.png);
+    margin-top: -140px;
 }
 
 .footer .before, .footer .after {
@@ -395,7 +407,7 @@ ul#flip_nav a.flipped_item {
     transform: skewY(-1deg);
     right: 0;
     width: 56%;
-    top: -8px;
+    top: -10px;
 }
 
 .footer .info {
@@ -442,6 +454,7 @@ ul#flip_nav a.flipped_item {
     margin: auto;
     height: auto;
     text-align: center;
+    margin-bottom: 80px;
 }
 
 .info .info-title {
@@ -533,3 +546,28 @@ ul#flip_nav a.flipped_item {
 .block {
     display: block;
 }
+
+
+ /* fixing styles. Please do refactoring! */
+
+
+.animateText {
+    font-size: 50px;
+    font-weight: 100;
+    text-shadow: 3px 3px 5px #000;
+    background: none;
+}
+
+.animateText.sliderText {
+    padding-right: 400px;
+    position: relative;
+    top: 60px;
+}
+
+.white {
+    color: #fff;
+}
+
+
+
+

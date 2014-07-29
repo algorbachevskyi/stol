@@ -10,6 +10,10 @@ $(function(){
     $('#build-img0').css('z-index','-10');
     var img = 0;
     $('#to-left').on('click',function(){
+        $('.build-controls').hide();
+        $('.floors').css('display','none');
+
+
         var intervalID = setInterval(function(){
 
             $('#build-img' + img).css('z-index','-20');
@@ -21,14 +25,25 @@ $(function(){
 
             $('#build-img' + img).css('z-index','-10');
             
-            if (img == 32 || img == 0) {
+            if (img === 32) {
                 clearInterval(intervalID);
+                $('.floor').removeClass('front').addClass('back');
+                $('.floors').css('display','block');
+                $('.build-controls').show();
+            } else if (img === 0) {
+                clearInterval(intervalID);
+                $('.floor').removeClass('back').addClass('front');
+                $('.floors').css('display','block');
+                $('.build-controls').show();
             }
         }, 40);
     });
 
 
     $('#to-right').on('click',function(){
+        $('.build-controls').hide();
+        $('.floors').css('display','none');
+
         var intervalID = setInterval(function(){
 
             $('#build-img' + img).css('z-index','-20');
@@ -40,10 +55,18 @@ $(function(){
             }
             
             $('#build-img' + img).css('z-index','-10');
-            
-            if (img == 32 || img == 0) {
+
+            if (img === 32) {
                 clearInterval(intervalID);
-            }   
+                $('.floor').removeClass('front').addClass('back');
+                $('.floors').css('display','block');
+                $('.build-controls').show();
+            } else if (img === 0) {
+                clearInterval(intervalID);
+                $('.floor').removeClass('back').addClass('front');
+                $('.floors').css('display','block');
+                $('.build-controls').show();
+            }
 
         }, 40);
     });
