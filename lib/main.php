@@ -82,6 +82,55 @@ class main {
         $f3->set('contacts', 'true');
         $f3->set('title', 'Знайти нас');
 
+//        if (isset($_POST['send-mail'])) {
+//
+//            $flat = $_POST['flat'];
+//            $floor = $_POST['floor'];
+//            $name = $_POST['request-name'];
+//            $email = $_POST['mail'];
+//            $tel = $_POST['tel'];
+
+//            $to = 'o.gorbachevskyi@gmail.com';
+//
+//            $subject = 'Website Change Reqest';
+//
+//            $headers = "From: nss.gorbachevsky@gmail.com\r\n";
+//            $headers .= "MIME-Version: 1.0\r\n";
+//            $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+//
+//            if (mail($to, $subject, 'Hello world', $headers)) {
+//                echo 'Your message has been sent.';
+//            } else {
+//                echo 'There was a problem sending the email.';
+//            }
+//
+//            exit();
+
+
+
+//        }
+
+//        $host = 'smtp.gmail.com';
+//        $port = 465;
+//        $user = 'o.gorbachevskyi@gmail.com';
+//        $pw = 'deltaokilE1989';
+//
+//        $smtp = new SMTP ( $host, $port, 'ssl', $user, $pw );
+//
+//        $smtp->set('From','ogorbachevskyi@softjourn.com');
+//        $smtp->set('To','o.gorbachevskyi@gmail.com');
+//        $smtp->set('Subject','F3 email test');
+//
+//        $message='Its test!';
+//
+//        $smtp->send($message);
+//        echo '<pre>'.$smtp->log().'</pre>';
+//        var_dump($smtp); exit();
+
+//        $res = mail("o.gorbachevskyi@gmail.com", "My Subject", "Line 1\nLine 2\nLine 3");
+//        var_dump($_POST); exit();
+
+
         echo View::instance()->render('header.htm');
         echo View::instance()->render('contacts.htm');
         echo View::instance()->render('footer.htm');

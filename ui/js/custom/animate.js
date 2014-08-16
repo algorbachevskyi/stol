@@ -48,4 +48,20 @@ $(function(){
         }
     });
 
+    $('.contact-text').textillate({
+        'minDisplayTime' : 4000,
+        'in' : {
+            'effect': 'fadeInLeftBig',
+            'sync': true
+        }
+    });
+
+    $('.send-request-text').textillate({
+        'minDisplayTime' : 4000,
+        'in' : {
+            'effect': 'fadeInDown',
+            'sync': true
+        }
+    });
+
 })

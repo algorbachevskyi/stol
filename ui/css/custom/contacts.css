@@ -1,9 +1,9 @@
 
 .contact-info {
     display: inline-block;
-    width: 300px;
+    width: 245px;
     float: left;
-    margin-top: 50px;
+    margin-top: 10px;
     text-align: right;
 }
 
@@ -16,7 +16,7 @@
 .office-map-wrap {
     display: inline-block;
     float: right;
-    margin-top: 50px;
+    margin-top: 10px;
     background-image: url(../../images/ui/lines-bg.png);
 }
 
@@ -25,4 +25,37 @@
     width: 450px;
     height: 280px;
     /*border: 1px solid #ffb80f;*/
+}
+
+.contacts-content {
+    width: 1200px;
+    margin-top: -20px;
+}
+
+.contacts-content .left {
+    width: 60%;
+}
+
+.contacts-content .right {
+    width: 39%;
+}
+
+.contact-text {
+    font-size: 30px;
+    text-transform: uppercase;
+    float: right;
+    padding-bottom: 10px;
+    padding-right: 110px;
+}
+
+.send-request-text {
+    font-size: 30px;
+    text-transform: uppercase;
+    float: left;
+    padding-bottom: 10px;
+    padding-left: 80px;
+}
+
+.request-form {
+    padding-top: 10px;
 }

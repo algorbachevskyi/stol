@@ -5,14 +5,12 @@
     <div class="after"></div>
 </div>
 
-<div class="content">
+<div class="content contacts-content">
+
     <div class="left">
 
-        <!--<div class="address-logo"></div>-->
-        <!--<div class="tks-logo"></div>-->
-
-    </div>
-    <div class="right">
+        <div class="contact-text">НАШІ КОНТАКТИ</div>
+        <div class="clear"></div>
 
         <div class="contact-info">
             <div class="title">Офіс з продажу:</div>
@@ -29,3 +27,70 @@
         <div class="office-map-wrap">
             <div id="office-map" class="office-map"></div>
         </div>
+
+    </div>
+    <div class="right row">
+
+        <div class="send-request-text">Замовити показ</div>
+        <div class="clear"></div>
+
+        <form role="form" method="post" action="/contacts" class="request-form" name="request-form">
+            <div class="form-group">
+                <label for="flat-select">Квартира</label>
+                    <div class="col-md-12 no-padding">
+                    <select name="flat" id="flat-select" class="float-left form-control md-6">
+                        <option value="kv5">1 кімнатна площею </option>
+                        <option value="kv6">1 кімнатна площею </option>
+                        <option value="kv1">2 кімнатна площею </option>
+                        <option value="kv2">2 кімнатна площею </option>
+                        <option value="kv3">2 кімнатна площею </option>
+                        <option value="kv4">2 кімнатна площею </option>
+                    </select>
+                        <select name="floor" id="floor-select" class="float-left form-control md-6">
+                            <option value="2">2 поверх </option>
+                            <option value="3">3 поверх</option>
+                            <option value="4">4 поверх</option>
+                            <option value="5">5 поверх</option>
+                            <option value="6">6 поверх</option>
+                            <option value="7">7 поверх</option>
+                            <option value="8">8 поверх</option>
+                        </select>
+                    </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="form-group">
+                <label for="name">Ваше Ім'я</label>
+                <input type="text" class="form-control" id="name" name="request-name" placeholder="Ваше Ім'я">
+            </div>
+            <div class="form-group">
+                <label for="tel">Контактний телефон</label>
+                <input type="tel" class="form-control" id="tel" name="tel" placeholder="Ваш контактний телефон">
+            </div>
+            <div class="form-group">
+                <label for="mail">Емейл</label>
+                <input type="text" class="form-control" id="mail" name="mail" placeholder="Ваш емейл">
+            </div>
+            <input type="hidden" name="send-mail" value="true"/>
+
+            <button type="submit" class="btn btn-primary ">Надіслати замовлення</button>
+        </form>
+
+
+        <!--<div class="order-text">Замовити показ</div>-->
+        <!--<div class="order-form">-->
+
+        <!--<span>Квартира:</span>-->
+
+        <!--<select name="floor-select" id="floor-select">-->
+        <!--<option value="2">2 поверх</option>-->
+        <!--<option value="3">3 поверх</option>-->
+        <!--<option value="4">4 поверх</option>-->
+        <!--<option value="5">5 поверх</option>-->
+        <!--<option value="6">6 поверх</option>-->
+        <!--<option value="7">7 поверх</option>-->
+        <!--<option value="8">8 поверх</option>-->
+        <!--</select>-->
+
+
+        <!--</div>-->
